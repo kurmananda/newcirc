@@ -74,7 +74,7 @@ export default function YouTube() {
         
 
         <div className={`h-[20vh] bg-[#f1f7fe] rounded-2xl shadow-lg p-10 pt-0 w-[80vw] m-6 `}>
-          <div className="pt-4">
+          <div className={`pt-4`}>
             <div id='college' className={`h-[17vh] overflow-y-scroll scrollbar-thin`}>
               
               <button className={`text-[3vh]`} onClick={editLink1}>Basic Electrical Engineering video</button>
