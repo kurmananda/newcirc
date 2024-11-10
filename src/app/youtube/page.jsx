@@ -2,40 +2,40 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar.jsx";
 import Image from "next/image";
-
+import {useState} from 'react';
 export default function YouTube() {
+  const [content, setLink] = useState("https://youtu.be/_QVDKXF9TXY?si=hQoljbE_0R3SI-Y7");
+  const editLink1 = () => {
+    setLink('https://youtu.be/_QVDKXF9TXY?si=hQoljbE_0R3SI-Y7');
+
+  };
+  const editLink2 = () => {
+    setLink('https://youtu.be/gtgLrJcGF7Q?si=tE7d8TaQWppy8MgO');
+  };
+  const editLink3 = () => {
+    setLink('https://youtu.be/yMc0_QN438U?si=uRpp447i6Ty4mdgw');
+  };
   
   return (
     <div>
-    <div className="hidden lg:block">
+    <div className={`hidden lg:block`}>
       <Navbar />
-      <div className=" topSection flex items-center justify-center w-full mx-auto flex-row ">
+      <div className={` topSection flex items-center justify-center w-full mx-auto flex-row `}>
 
-        <div className="h-[55vh] bg-[#f1f7fe] rounded-2xl shadow-lg p-10 pt-0  mt-[20vh] mb-[10vh] w-[40vw] ">
-          <div className="pt-4">
-            <div id='college' className="h-[50vh] overflow-y-scroll ">
-              <h1 className="text-[4vh]">what is iist</h1>
-              <h6>some waste clg</h6>
-              <h1 className="text-[4vh]">food quality</h1>
-              <h6>better than many other colloges, they don't keep ladies finger dialy that's the problem</h6>
-              <h1 className="text-[4vh]">what is iist</h1>
-              <h6>some waste clg</h6>
-              <h1 className="text-[4vh]">say something abt iist</h1>
-              <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corporis quae porro neque officiis sunt unde nisi iste rem aut!</h6>
-
-              <h1 className="text-[4vh]">say something abt iist</h1>
-              <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corporis quae porro neque officiis sunt unde nisi iste rem aut!</h6>
-
-              <h1 className="text-[4vh]">say something abt iist</h1>
-              <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corporis quae porro neque officiis sunt unde nisi iste rem aut!</h6>
-
+        <div className={`h-[55vh] bg-[#f1f7fe] rounded-2xl shadow-lg p-10 pt-0  mt-[20vh] mb-[10vh] w-[40vw]`}>
+          <div className={`pt-4`}>
+            <div id='college' className={`h-[50vh] overflow-y-scroll`}>
+              
+              <button className={`text-[3vh]`} onClick={editLink1}>Basic Electrical Engineering video</button>
+              <button className={`text-[3vh]`} onClick={editLink2}>mechanics 10th sept part-2{content}</button>
+              <button className={`text-[3vh]`} onClick={editLink3}>mechanics 10th sept part-1</button>
             </div>
             
           </div>
         </div>
         {/* Image Section */}
-        <div className="h-auto flex justify-center items-center p-4 pt-0  mt-[10vh] w-[50vw] mt-[10vh]">
-              <div className="flex flex-col items-center justify-center ">
+        <div className={`h-auto flex justify-center items-center p-4 pt-0  mt-[10vh] w-[50vw] mt-[10vh]`}>
+              <div className={`flex flex-col items-center justify-center `}>
                 {/* <Image
                   src="/images/aboutt.png"
                   alt="contact us png"
@@ -44,7 +44,7 @@ export default function YouTube() {
                   height={400} // Adjust height based on the aspect ratio of your image
                   priority // Optionally, add this if it’s an important image (e.g., above-the-fold content)
                 /> */}
-                <iframe className='rounded-2xl  w-[40vw] h-[23vw] m-0' src="https://www.youtube.com/embed/sU8gsBT05dY?si=nb3vEtNJ31p51ctq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                <iframe id="aa"  className={`rounded-2xl  w-[40vw] h-[23vw] m-0`} src={content} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullscreen ></iframe>
               </div>
             </div> 
       </div>
@@ -53,13 +53,13 @@ export default function YouTube() {
     </div >
 
 
-    <div className="block lg:hidden">
+    <div className={`block lg:hidden`}>
       <Navbar />
       
-      <div className=" topSection flex items-center justify-center w-full  flex-col ">
+      <div className={` topSection flex items-center justify-center w-full  flex-col `}>
         {/* Image Section */}
-        <div className=" h-auto flex justify-center items-center m-4 pt-0 w-[100%] ">
-          <div className="flex flex-col items-center justify-center ">
+        <div className={` h-auto flex justify-center items-center m-4 pt-0 w-[100%] `}>
+          <div className={`flex flex-col items-center justify-center `}>
             {/* <Image
               src="/images/aboutt.png"
               alt="contact us png"
@@ -68,29 +68,18 @@ export default function YouTube() {
               height={400} // Adjust height based on the aspect ratio of your image
               priority // Optionally, add this if it’s an important image (e.g., above-the-fold content)
             /> */}
-            <iframe className='rounded-2xl w-[80vw] h-[45vw] mb-10 ' src="https://www.youtube.com/embed/sU8gsBT05dY?si=nb3vEtNJ31p51ctq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+            <iframe className={`rounded-2xl w-[80vw] h-[45vw] mb-10 `} src={content} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullscreen ></iframe>
           </div>
         </div> 
         
 
-        <div className="h-[20vh] bg-[#f1f7fe] rounded-2xl shadow-lg p-10 pt-0 w-[80vw] m-6 ">
+        <div className={`h-[20vh] bg-[#f1f7fe] rounded-2xl shadow-lg p-10 pt-0 w-[80vw] m-6 `}>
           <div className="pt-4">
-            <div id='college' className="h-[17vh] overflow-y-scroll scrollbar-thin">
-              <h1 className="text-[4vh]">what is iist</h1>
-              <h6>some waste clg</h6>
-              <h1 className="text-[4vh]">food quality</h1>
-              <h6>better than many other colloges, they don't keep ladies finger dialy that's the problem</h6>
-              <h1 className="text-[4vh]">what is iist</h1>
-              <h6>some waste clg</h6>
-              <h1 className="text-[4vh]">say something abt iist</h1>
-              <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corporis quae porro neque officiis sunt unde nisi iste rem aut!</h6>
-
-              <h1 className="text-[4vh]">say something abt iist</h1>
-              <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corporis quae porro neque officiis sunt unde nisi iste rem aut!</h6>
-
-              <h1 className="text-[4vh]">say something abt iist</h1>
-              <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corporis quae porro neque officiis sunt unde nisi iste rem aut!</h6>
-
+            <div id='college' className={`h-[17vh] overflow-y-scroll scrollbar-thin`}>
+              
+              <button className={`text-[3vh]`} onClick={editLink1}>Basic Electrical Engineering video</button>
+              <button className={`text-[3vh]`} onClick={editLink2}>mechanics 10th sept part-2{content}</button>
+              <button className={`text-[3vh]`} onClick={editLink3}>mechanics 10th sept part-1</button>
             </div>
             
           </div>
