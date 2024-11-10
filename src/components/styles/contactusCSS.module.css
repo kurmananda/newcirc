@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Averta";
+  src: url("/fonts/AvertaStandard.ttf") format("truetype");
+  font-style: normal;
+}
+
+.fonttAverta {
+  font-family: "Averta";
+}
+
+
+.input {
+    background: none;
+    height: 40px;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    width: 100%;
+  }
+
+  .formButton {
+    background-color: #1e91d6;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formButton:hover {
+    background-color: #0072bb;
+  }

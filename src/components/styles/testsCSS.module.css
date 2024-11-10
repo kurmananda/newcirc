@@ -1,0 +1,6 @@
+.topSection {
+  overflow: hidden;
+  background: url("/images/sectionMask.png") center center no-repeat #eb427e;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,308 @@
+/* From Uiverse.io by alexruix */
+
+.dividerContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Divider line styling */
+.divider {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1px;
+  color: #343434;
+}
+
+/* Text in between the divider lines */
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #b4b4b4;
+  margin: 0 10px;
+}
+
+.formBox {
+  background: #f1f7fe;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 12px;
+  text-align: center;
+}
+
+/*Form text*/
+.title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/*Inputs box*/
+.formContainer {
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f1f7fe;
+}
+
+.required:before {
+  content: "* ";
+  color: red;
+}
+
+.input {
+  background: none;
+  height: 40px;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  width: 100%;
+}
+.input2 {
+  height: 40px;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  width: 100%;
+}
+
+.formSection {
+  padding: 16px;
+  font-size: 0.85rem;
+  background-color: #e0ecfb;
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.formSection a {
+  font-weight: bold;
+  color: #1e91d6;
+  transition: color 0.3s ease;
+}
+
+.formSection a:hover {
+  color: #0072bb;
+  text-decoration: underline;
+}
+
+.smallLink {
+  font-weight: bold;
+  color: #1e91d6;
+  transition: color 0.3s ease;
+}
+
+.smallLink:hover {
+  color: #0072bb;
+  text-decoration: underline;
+}
+
+/*Button*/
+.formButton {
+  background-color: #1e91d6;
+  color: #fff;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formButton:hover {
+  background-color: #0072bb;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("/fonts/AvertaStandard.ttf") format("truetype");
+  font-style: normal;
+}
+
+.fonttAverta {
+  font-family: "Averta";
+}
+
+.GoogleButton {
+  max-width: 320px;
+  display: flex;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.77rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  gap: 0.75rem;
+  color: rgb(65, 63, 63);
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.GoogleButton svg {
+  height: 24px;
+}
+
+.GoogleButton:hover {
+  transform: scale(1.02);
+}
+
+.otpForm {
+  width: 330px;
+  height: 400px;
+  background-color: #f1f7fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 20px;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+  border-radius: 15px;
+}
+
+.mainHeading {
+  font-size: 2em;
+  color: rgb(15, 15, 15);
+  font-weight: 700;
+}
+
+.otpSubheading {
+  font-size: 0.9em;
+  color: black;
+  line-height: 17px;
+  text-align: center;
+}
+
+.emailHeading {
+  font-size: 0.9em;
+  color: #0072bb;
+  text-align: center;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.otpInput {
+  background-color: rgb(228, 228, 228);
+  width: 55px;
+  height: 50px;
+  text-align: center;
+  border-radius: 7px;
+  caret-color: #0072bb;
+  color: rgb(46, 46, 46);
+  outline: none;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.otpInput:focus,
+.otpInput:valid {
+  background-color: #1e8fd62d;
+  transition-duration: 0.3s;
+}
+
+.verifyButton {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #1e91d6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+
+.verifyButton:hover {
+  background-color: #0072bb;
+  transition-duration: 0.2s;
+}
+
+.exitBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.171);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: none;
+  color: black;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.exitBtn:hover {
+  background-color: #1e91d6;
+}
+
+.resendNote {
+  font-size: 0.9em;
+  color: black;
+  margin-top: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.resendBtn {
+  background-color: transparent;
+  border: none;
+  color: #1e91d6;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.resendBtn:hover {
+  color: #0072bb;
+}
+
+.resendBtnBefore {
+  background-color: transparent;
+  border: none;
+  color: #585858;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.forgotBtn {
+  background-color: transparent;
+  border: none;
+  color: #1e91d6;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+.forgotBtn:hover {
+  color: #0072bb;
+}

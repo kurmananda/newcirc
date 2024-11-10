@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Averta";
+  src: url("/fonts/AvertaStandard.ttf") format("truetype");
+  font-style: normal;
+}
+
+.fonttAverta {
+  font-family: "Averta";
+  font-weight: bolder;
+}
