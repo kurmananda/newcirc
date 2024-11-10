@@ -8,7 +8,7 @@ export const metadata = {
   },
   url: "https://studycircuit.vercel.app",
   type: "website",
-  siteName: "Dhanak 2k25",
+  siteName: "StudyCirc",
 };
 
 export default function Home() {
