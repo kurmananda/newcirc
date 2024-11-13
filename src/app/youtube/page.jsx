@@ -72,7 +72,7 @@ export default function YouTube() {
               height={400} // Adjust height based on the aspect ratio of your image
               priority // Optionally, add this if it’s an important image (e.g., above-the-fold content)
             /> */}
-            <iframe className={`rounded-2xl w-[80vw] h-[45vw] mb-10 `} src={content} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen ></iframe>
+            <iframe className={`rounded-2xl w-[95vw] h-[60vw] mb-10 `} src={content} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen ></iframe>
           </div>
         </div> 
         
