@@ -15,6 +15,9 @@ export default function YouTube() {
   const editLink3 = () => {
     setLink('https://www.youtube.com/embed/yMc0_QN438U?si=0K51x45IM1qgI5IC');
   };
+  const editLink4 = () => {
+    setLink('https://www.youtube.com/embed/zZjaIOsp83Y?si=vK9zj5as5KUD-wRq');
+  };
   
   return (
     <div>
@@ -29,6 +32,7 @@ export default function YouTube() {
               <button className={`bg-[rgb(30,145,214)] text-white rounded-2xl text-[5vh]`} onClick={editLink1}>Basic Electrical Engineering video</button>
               <button className={`bg-[rgb(30,145,214)] text-white rounded-2xl text-[5vh]`} onClick={editLink2}>mechanics 10th sept part-2</button>
               <button className={`bg-[rgb(30,145,214)] text-white rounded-2xl text-[5vh]`} onClick={editLink3}>mechanics 10th sept part-1</button>
+              <button className={`bg-[rgb(30,145,214)] text-white rounded-2xl text-[5vh]`} onClick={editLink4}>ISS, (radar thing) which is not in PPT</button>
             </div>
             
           </div>
@@ -80,6 +84,7 @@ export default function YouTube() {
               <button className={`bg-[rgb(30,145,214)] text-white rounded-xl text-[2vh] p-3`} onClick={editLink1}>Basic Electrical Engineering video</button>
               <button className={`bg-[rgb(30,145,214)] text-white rounded-xl text-[2vh] p-3`} onClick={editLink2}>mechanics 10th sept part-2</button>
               <button className={`bg-[rgb(30,145,214)] text-white rounded-xl text-[2vh] p-3`} onClick={editLink3}>mechanics 10th sept part-1</button>
+              <button className={`bg-[rgb(30,145,214)] text-white rounded-xl text-[2vh] p-3`} onClick={editLink4}>ISS, (radar thing) which is not in PPT</button>
             </div>
             
           </div>
